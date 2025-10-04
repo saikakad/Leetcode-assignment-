@@ -1,0 +1,18 @@
+class Solution {
+public:
+    int findMaxConsecutiveOnes(vector<int>& nums) {
+        int maxCount = 0; // stores max consecutive 1s
+        int count = 0;    // stores current consecutive 1s
+
+        for(int i = 0; i < nums.size(); i++) {
+            if(nums[i] == 1) {
+                count++;                  // current streak increases
+                maxCount = max(maxCount, count); // update max
+            } else {
+                count = 0;                // reset streak on 0
+            }
+        }
+
+        return maxCount;
+    }
+};
