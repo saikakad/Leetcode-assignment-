@@ -1,0 +1,25 @@
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        if(s==" "){
+            return true;
+        }
+        string t="";
+        for(auto i :s){
+            if((i>=65 && i<=90) || (i>=97 && i<=122)|| i>=48 && i<=57){
+                t+=i;
+            }
+        }
+        int i=0;
+        int j=t.size()-1;
+        transform(t.begin(), t.end(), t.begin(), ::tolower);
+        cout<<t<<" ";
+        while(i<j){
+            if(t[i]!=t[j]){
+                return false;}
+            i++;
+            j--;
+        }
+        return true;
+    }
+};
