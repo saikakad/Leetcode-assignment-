@@ -41,22 +41,6 @@ Minimum Size Subarray Sum (209)
 
 Subarray Sums Divisible by K (974)
 
-🔹 4. Hashing & Frequency
-
-Two Sum (1)
-
-Majority Element (169)
-
-Top K Frequent Elements (347)
-
-Contains Duplicate (217)
-
-Contains Duplicate II (219)
-
-First Missing Positive (41)
-
-Find All Duplicates in an Array (442)
-
 🔹 5. Sorting & Rearrangement
 
 Sort Colors (Dutch National Flag) (75)
@@ -125,39 +109,4 @@ Longest Consecutive Sequence (128)
 
 Candy (135)
 
-⚡ Total = 65 problems
 
-✅ Pattern Recap
-
-Basics → Remove, merge, shift, duplicate handling.
-
-Binary Search → Sorted + rotated arrays.
-
-Subarray → Kadane, prefix, sliding window.
-
-Hashing → Duplicates, missing, majority, freq counts.
-
-Sorting / Rearrangement → Dutch flag, missing + extra.
-
-Prefix/Suffix → Range queries, product except self.
-
-Sliding Window → Longest/shortest subarray patterns.
-
-Matrix → Traversals + modifications.
-
-Hard → Water, histogram, rectangle, sequence.j-1]){
-                count++;
-            }
-            if(count == 2){
-                return nums[j-1];
-            }
-        }
-        if(count != 2){
-            return nums[nums.size()-1];
-        }
-        
-        return nums[0];
-    
-
-    }
-};
